@@ -1,6 +1,6 @@
-package com.github.renatocardosoalves.serviceemail.models;
+package com.github.renatocardosoalves.serviceemail.adapters.outbound.persistence.entities;
 
-import com.github.renatocardosoalves.serviceemail.enums.StatusEmail;
+import com.github.renatocardosoalves.serviceemail.application.domain.enums.StatusEmail;
 import lombok.Data;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -14,7 +14,7 @@ import java.util.UUID;
 @Entity
 @EntityListeners(AuditingEntityListener.class)
 @Table(name = "tb_email")
-public class EmailModel implements Serializable {
+public class EmailEntity implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

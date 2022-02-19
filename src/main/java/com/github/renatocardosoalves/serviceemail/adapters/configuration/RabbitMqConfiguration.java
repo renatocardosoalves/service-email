@@ -1,4 +1,4 @@
-package com.github.renatocardosoalves.serviceemail.configs;
+package com.github.renatocardosoalves.serviceemail.adapters.configuration;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class RabbitMqConfig {
+public class RabbitMqConfiguration {
 
     @Value("${spring.rabbitmq.queue}")
     private String queue;

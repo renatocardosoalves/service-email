@@ -1,4 +1,4 @@
-package com.github.renatocardosoalves.serviceemail.dtos;
+package com.github.renatocardosoalves.serviceemail.adapters.inbound.dtos;
 
 import lombok.Data;
 
