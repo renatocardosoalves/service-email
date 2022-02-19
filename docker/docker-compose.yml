@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  database:
+    image: ${IMAGE_NAME}:${IMAGE_VERSION}
+    container_name: ${CONTAINER_NAME}
+    ports:
+      - ${MARIADB_HOST_PORT}:${MARIADB_CONTAINER_PORT}
+    environment:
+      MARIADB_DATABASE: ${MARIADB_DATABASE}
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD}
