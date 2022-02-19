@@ -14,3 +14,6 @@ spring:
           auth: true
           starttls:
             enable: true
+  rabbitmq:
+    addresses: ${RABBITMQ_ADDRESSES}
+    queue: ${RABBITMQ_QUEUE}
